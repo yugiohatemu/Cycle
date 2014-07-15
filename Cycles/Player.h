@@ -15,7 +15,6 @@
 
 class Player{
 public:
-    Color c;
     Rect hitbox;
     Player();
     ~Player();

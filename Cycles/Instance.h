@@ -15,14 +15,17 @@
 #include "algebra.h"
 #include "rect.h"
 #include "Player.h"
+#include "PathMap.h"
 
 class Instance{
 private:
+    SDL_Window* gWindow;
+    SDL_GLContext gContext;
+    
     Instance();  // Private so that it can  not be called
 public:
     Player p;
-    SDL_Window* gWindow;
-    SDL_GLContext gContext;
+    PathMap path_map;
     
     static Instance& get();
     bool init_all();

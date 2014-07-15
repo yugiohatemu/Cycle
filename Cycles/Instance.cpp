@@ -11,7 +11,7 @@
 #include <SDL2/SDL_opengl.h>
 #include <SDL2/SDL.h>
 
-Instance::Instance(){
+Instance::Instance():path_map( 10,10 ){
 
 }
 
@@ -67,6 +67,7 @@ void Instance::destroy_all(){
 void Instance::render(){
   
     glClear(GL_COLOR_BUFFER_BIT);
+    path_map.render();
     p.render();
     SDL_GL_SwapWindow( gWindow );
 }

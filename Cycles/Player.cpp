@@ -13,8 +13,8 @@
 Player::Player(){
     hitbox.height = 50;
     hitbox.width = 50;
-    c.g = 0;
-    c.b = 0;
+    hitbox.c.g = 0;
+    hitbox.c.b = 0;
 }
 
 Player::~Player(){
@@ -23,7 +23,6 @@ Player::~Player(){
 
 void Player::render(){
     glPushMatrix();
-    glColor4f(c.r, c.g, c.b, c.a);
     hitbox.render();
     glPopMatrix();
 }

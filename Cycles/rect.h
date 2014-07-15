@@ -15,6 +15,7 @@ struct Rect{
     Point top_left;
     float width;
     float height;
+    Color c;
     Rect();
     Rect(Point left_top, int width, int height);
     bool is_pos_in_rec(Point pos);

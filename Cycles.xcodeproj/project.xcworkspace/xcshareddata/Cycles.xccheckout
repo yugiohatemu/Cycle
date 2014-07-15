@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C37F01F0-5B07-4CC3-A173-799724D99C3F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Cycles</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7D8E36CC-7D1F-4DF0-9B24-0F275B9DD805</key>
+		<string>https://github.com/yugiohatemu/Cycle.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Cycles.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7D8E36CC-7D1F-4DF0-9B24-0F275B9DD805</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yugiohatemu/Cycle.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7D8E36CC-7D1F-4DF0-9B24-0F275B9DD805</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7D8E36CC-7D1F-4DF0-9B24-0F275B9DD805</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Cycle</string>
+		</dict>
+	</array>
+</dict>
+</plist>

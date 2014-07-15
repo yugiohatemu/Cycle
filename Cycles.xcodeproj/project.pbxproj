@@ -18,6 +18,7 @@
 		3BE268571972E6650000AE48 /* rect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BE268521972E6650000AE48 /* rect.cpp */; };
 		3BE268581972E6650000AE48 /* timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BE268541972E6650000AE48 /* timer.cpp */; };
 		3BE2685B19731C330000AE48 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BE2685919731C330000AE48 /* Player.cpp */; };
+		B6A34C971974B8C1007A0362 /* PathMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6A34C951974B8C1007A0362 /* PathMap.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,8 @@
 		3BE268551972E6650000AE48 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
 		3BE2685919731C330000AE48 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		3BE2685A19731C330000AE48 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		B6A34C951974B8C1007A0362 /* PathMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PathMap.cpp; sourceTree = "<group>"; };
+		B6A34C961974B8C1007A0362 /* PathMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathMap.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				3BE2685919731C330000AE48 /* Player.cpp */,
 				3BE2685A19731C330000AE48 /* Player.h */,
 				3BDC52041972E14500411B7D /* Cycles.1 */,
+				B6A34C951974B8C1007A0362 /* PathMap.cpp */,
+				B6A34C961974B8C1007A0362 /* PathMap.h */,
 			);
 			path = Cycles;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A34C971974B8C1007A0362 /* PathMap.cpp in Sources */,
 				3BE2684F1972E3E80000AE48 /* Instance.cpp in Sources */,
 				3BE268581972E6650000AE48 /* timer.cpp in Sources */,
 				3BE2685B19731C330000AE48 /* Player.cpp in Sources */,
