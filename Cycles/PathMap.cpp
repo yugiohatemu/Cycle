@@ -19,6 +19,7 @@ PathMap::PathMap(unsigned int column, unsigned int row):column(column),row(row){
         std::fill(bit_map[i], bit_map[i] + column, false);
     }
     
+    srand(time(NULL));
     unsigned int rand_count = column * row * 0.15;
     for (unsigned int i = 0; i < rand_count; i++) {
         unsigned int r = rand() % row;
@@ -32,6 +33,8 @@ PathMap::PathMap(unsigned int column, unsigned int row):column(column),row(row){
         for (unsigned int j = 0; j < column; j++) {
             rect_map[i][j].top_left.x = j * 50;
             rect_map[i][j].top_left.y = i * 50;
+            rect_map[i][j].width = 50;
+            rect_map[i][j].height = 50;
             if (bit_map[i][j]) {
                 rect_map[i][j].c = Color(0,0,0);
             }
@@ -55,10 +58,18 @@ PathMap::~PathMap(){
 //For efficiently, cna use 1-d array instead of two
 void PathMap::render(){
     glPushMatrix();
+    glBegin(GL_QUADS);
+    glColor4f(1, 1, 1, 1);
+    glVertex2f(0, 0); glVertex2f(640, 0);
+    glVertex2f(640, 480); glVertex2f(0,480);
+    glEnd();
+    glPopMatrix();
     
+    //Just render the block
+    glPushMatrix();
     for (unsigned int i = 0; i < row; i++) {
         for (unsigned int j = 0; j < column; j++) {
-            rect_map[i][j].render();
+             if(bit_map[i][j])rect_map[i][j].render();
         }
     }
     

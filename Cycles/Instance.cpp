@@ -12,7 +12,17 @@
 #include <SDL2/SDL.h>
 
 Instance::Instance():path_map( 10,10 ){
-
+    //Find an empty spot
+    p.path_map = &path_map;
+    
+    for (unsigned int i =0; i < path_map.row; i++) {
+        for (unsigned int j = 0; j < path_map.column; j++) {
+            if (!path_map.bit_map[i][j]) {
+                p.hitbox.top_left.x = j * 50; p.hitbox.top_left.y = i * 50;
+                p.x = j; p.y = i;
+            }
+        }
+    }
 }
 
 Instance& Instance::get(){

@@ -13,9 +13,14 @@
 #include "rect.h"
 #include <SDL2/SDL_events.h>
 
+class PathMap;
+
 class Player{
 public:
+    PathMap * path_map; //we need to interact with item inthere further
     Rect hitbox;
+    unsigned int x;
+    unsigned int y;
     Player();
     ~Player();
     void render();
